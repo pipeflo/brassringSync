@@ -1,0 +1,34 @@
+//Actualizar
+{
+  "_id": "8229df48c980af0de414dd8ea10d1503",
+  "_rev": "6-683d9c28c01081aaa05c922183928750",
+  "type": "syncRecord",
+  "idBrassring": "812BR",
+  "idTrabajando": 2968481,
+  "lastUpdate": 1476653456000,
+  "lastAction": "created",
+  "actions": [
+    {
+      "type": "created",
+      "idSyncRequest": "02bcf0ebf3801217109c2f096c8909f1",
+      "date": 1476653456000
+    }
+  ]
+}
+//Ignorar
+{
+  "_id": "8229df48c980af0de414dd8ea10d2d30",
+  "_rev": "6-72e0c59d189f0d265a13cad26a76a321",
+  "type": "syncRecord",
+  "idBrassring": "811BR",
+  "idTrabajando": 2968478,
+  "lastUpdate": 1456867856000,
+  "lastAction": "created",
+  "actions": [
+    {
+      "type": "created",
+      "idSyncRequest": "02bcf0ebf3801217109c2f096c8909f1",
+      "date": 1456867856000
+    }
+  ]
+}

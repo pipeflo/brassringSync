@@ -1,0 +1,53 @@
+
+    <!-- Data Table START -->
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Sync Jobs Now</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            
+            
+            <div class="panel-body" ng-if="!processing">
+                <div class="panel-body">
+                    <span>Click the button to sync jobs now</span>
+                    <a class="btn btn-block btn-social btn-bitbucket" ng-click="syncJobs()">
+                        <i class="fa fa-refresh"></i> <strong>Sync Jobs Now</strong>
+                    </a>
+                </div>
+                
+                <div class="panel-body" ng-show="results">
+                    <h2>Results</h2>
+                    <div class="col-lg-6 col-sm-12">
+                        <canvas id="doughnut" class="chart chart-doughnut" chart-data="data" chart-labels="labels">
+                        </canvas> 
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="type in labels" ng-if="type!='total'">
+                                    <td>{{ type }}</td>
+                                    <td>{{ results[type] }}</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Total</strong></td>
+                                    <td><strong>{{ total }}</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body spinner" ng-if="processing">
+                <img src="./assets/images/loading.gif"/><br>
+                <span class="glyphicon glyphico\ n-repeat">Loading please wait ...</span>
+            </div>
+        <!-- /.box-body -->
+    </div>
+    <!-- Data Table END -->
